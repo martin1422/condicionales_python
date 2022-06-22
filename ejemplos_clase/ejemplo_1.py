@@ -9,7 +9,7 @@ x = 5
 y = 2
 
 # Verificar si "x" es par
-if (x % 2) == 0:
+if (x % 2) == 0: #
     print('x es par')
 else:
     print('x es impar')
