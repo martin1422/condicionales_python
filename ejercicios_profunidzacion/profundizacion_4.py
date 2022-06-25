@@ -33,3 +33,81 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+print('Ingrese tres palabras distintas:')
+print('Ingrese la primer palabra: ')
+palabra_1 = str(input())
+
+print('Ingrese la segunda palabra: ')
+palabra_2 = str(input())
+
+print('Ingrese la terecer palabra: ')
+palabra_3 = str(input())
+
+print('Ingrese que desea hacer:\n(1) Ordenarlas alfabeticamente.\n(2) Ordenarlas por cantidad de caracteres.')
+opcion = str(input())
+
+if opcion == '1':               
+    if (palabra_1 < palabra_2) and (palabra_1 < palabra_3):
+        print(palabra_1)
+        if (palabra_2 < palabra_3):
+            print(palabra_2)
+            print(palabra_3)
+        else: 
+            print(palabra_3)
+            print(palabra_2)
+
+    if (palabra_2 < palabra_1) and (palabra_2 < palabra_3):
+        print(palabra_2)
+        if (palabra_1 < palabra_3):
+            print(palabra_1)
+            print(palabra_3)
+        else: 
+            print(palabra_3)
+            print(palabra_1)
+
+    if (palabra_3 < palabra_2) and (palabra_3 < palabra_1):
+        print(palabra_3)
+        if (palabra_1 < palabra_2):
+            print(palabra_1)
+            print(palabra_2)
+        else: 
+            print(palabra_2)
+            print(palabra_1)
+
+
+if opcion == '2':
+    if ((len(palabra_1) == len(palabra_2)) and (len(palabra_1) == len(palabra_3)) and (len(palabra_2) == len(palabra_3))):
+        print('Las tres palabras tienen la misma cantidad de caracteres!')
+    else:
+
+        if (len(palabra_1) > len(palabra_2)) and (len(palabra_1) > len(palabra_3)):
+            print(palabra_1)
+            if (len(palabra_2) > len(palabra_3)):
+                print(palabra_2)
+                print(palabra_3)
+            else:
+                print(palabra_3)
+                print(palabra_2)
+
+        if (len(palabra_2) > len(palabra_1)) and (len(palabra_2) > len(palabra_3)):
+            print(palabra_2)
+            if (len(palabra_1) > len(palabra_3)):
+                print(palabra_1)
+                print(palabra_3)
+            else: 
+                print(palabra_3)
+                print(palabra_1)
+
+        if (len(palabra_3) > len(palabra_2)) and (len(palabra_3) > len(palabra_1)):
+            print(palabra_3)
+            if (len(palabra_1) > len(palabra_2)):
+                print(palabra_1)
+                print(palabra_2)
+            else: 
+                print(palabra_2)
+                print(palabra_1)
+
+
+if opcion != '1' and opcion != '2':
+    print('La opcion no es valida!')

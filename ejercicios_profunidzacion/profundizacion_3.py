@@ -30,3 +30,35 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+print('Ingrese tres temperaturas en °C distintas:')
+print('Ingrese temp 1:')
+temp_1 = int(input())
+
+print('Ingrese temp 2:')
+temp_2 = int(input())
+
+print('Ingrese temp 3:')
+temp_3 = int(input())
+
+if (temp_1 > temp_2) and (temp_1 > temp_3):
+    print('La temperatura mayor ingresada es: ', temp_1, '°C')
+elif (temp_2 > temp_1) and (temp_2 > temp_3):
+    print('La temperatura mayor ingresada es: ', temp_2, '°C')
+elif (temp_3 > temp_2) and (temp_3 > temp_1):
+    print('La temperatura mayor ingresada es: ', temp_3, '°C')
+
+
+if (temp_1 < temp_2) and (temp_1 < temp_3):
+    print('La temperatura menor ingresada es: ', temp_1, '°C')
+elif (temp_2 < temp_1) and (temp_2 < temp_3):
+    print('La temperatura menor ingresada es: ', temp_2, '°C')
+elif (temp_3 < temp_2) and (temp_3 < temp_1):
+    print('La temperatura menor ingresada es: ', temp_3, '°C')
+else:
+    print('Las temperaturas ingresadas son todas iguales')
+
+promedio = (temp_1 + temp_2 + temp_3) / 3
+
+print('El promedio de las temperaturas ingresadas es: ', promedio, '°C')
+

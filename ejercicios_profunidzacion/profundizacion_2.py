@@ -21,5 +21,26 @@ o impar.
 Para cada caso imprimir el resultado en pantalla.
 '''
 
+def calculo(numero):
+    if (numero % 2) == 0:
+        print('El numero ingresado es par')
+    else:
+        print('El numero ingresado es impar')    
+    return
+
+
+
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+print('Ingrese tres numeros enteros:')
+print('numero 1:')
+numero_1 = int(input())
+calculo(numero_1)
+
+print('numero 2:')
+numero_2 = int(input())
+calculo(numero_2)
+
+print('numero 3:')
+numero_3 = int(input())
+calculo(numero_3)
