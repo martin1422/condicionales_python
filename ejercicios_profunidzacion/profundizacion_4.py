@@ -37,12 +37,15 @@ print('Ejercicios de práctica con cadenas')
 print('Ingrese tres palabras distintas:')
 print('Ingrese la primer palabra: ')
 palabra_1 = str(input())
+palabra_1 = palabra_1.lower()
 
 print('Ingrese la segunda palabra: ')
 palabra_2 = str(input())
+palabra_2 = palabra_2.lower()
 
 print('Ingrese la terecer palabra: ')
 palabra_3 = str(input())
+palabra_3 = palabra_3.lower()
 
 print('Ingrese que desea hacer:\n(1) Ordenarlas alfabeticamente.\n(2) Ordenarlas por cantidad de caracteres.')
 opcion = str(input())
